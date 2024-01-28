@@ -26,7 +26,7 @@ jobs:
       - name:  Copy wordpress from s3
         run: |
           aws deploy push \
-            --application-name WordPress_App \
+            --application-name wordpress \
             --s3-location s3://${{env.BUCKET_NAME}}/WordPressApp.zip \
             --ignore-hidden-files
       - name:  Deploy wordpress from s3
