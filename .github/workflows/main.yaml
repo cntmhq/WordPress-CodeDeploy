@@ -2,8 +2,8 @@
 # The workflow Creates static website using aws s3
 name: AWS example workflow
 on:
-  - push
-  - workflow_dispatch
+  push
+  workflow_dispatch
 env:
   BUCKET_NAME : "apero-wordpress-test-bucket-terraform-dev"
   AWS_REGION : "us-west-2"
